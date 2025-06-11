@@ -11,15 +11,13 @@ yarn-error.log*
 # Rust build artifacts
 /target/
 **/target/
-Cargo.lock          # (Optional: commit if you want reproducible builds. Keep for program repo)
-/Cargo.lock         # REMOVE this line if you want deterministic builds. Otherwise, ignore if publishing lib.
 
 # Anchor build artifacts
 /.anchor/
 **/.anchor/
 **/deployments/
 
-# Solana CLI / local keypairs (never commit!)
+# Solana CLI / local keypairs 
 /*.json
 **/*.json
 !.github/**/*.json  # allow json in .github/ (workflows etc)
