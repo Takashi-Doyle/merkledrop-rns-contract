@@ -45,7 +45,7 @@
 use anchor_lang::prelude::*;
 use anchor_spl::token::{self, Token, TokenAccount, Mint, TransferChecked};
 
-declare_id!("4KDWmJHSTRK7bhxJMwCBUUeBvX7pgrNuhYYiCMxRVY9V"); // NOTE: Replace with your own program ID after deployment!
+declare_id!("4KDWmJHSTRK7bhxJMwCBUUeBvX7pgrNuhYYiCMxRVY9V");
 
 // Configuration
 const MAX_CLAIMS: usize = 1_000_000;
