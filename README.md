@@ -25,9 +25,14 @@ This is the **ultra-light, open-source, and math-nerd-approved** airdrop program
   Call `close_state` after the airdrop and the rent for the state account is returned to your chosen wallet!
 
 ---
--**Test Coverage:**
+- **Test Coverage:**
 This contract ships with a comprehensive 10/10 passing Anchor test suite, checking all Merkle proof, claim, window, admin, and rent flows.
 See /tests/airdrop.ts for details.
+
+---
+- **Transparency Note:**  
+This contract was deployed before Solana “Verified Build” was part of our workflow.  
+While the Explorer does not show the “Verified Build” badge, **all source code, test coverage, and deploy scripts are fully public and open source**—see this repo for full transparency.
 
 ---
 ## ⚠️ IMPORTANT:
