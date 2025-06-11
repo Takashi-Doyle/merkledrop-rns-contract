@@ -1,0 +1,25 @@
+[toolchain]
+package_manager = "yarn"
+
+[features]
+resolution = true
+skip-lint = false
+seeds = true
+
+[programs.localnet]
+airdrop0 = "Fg6PaFpoGXkYsidMpWxqSWY88Pv9Cj7dQvaywZTyn8ZD" # Dummy ID, replace after deployment!
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "https://api.devnet.solana.com"
+wallet = "//path/to/your/keypair.json"
+
+# Uncomment for mainnet deployment and set your wallet path
+# [provider]
+# cluster = "https://api.mainnet-beta.solana.com"
+# wallet = "//path/to/your/keypair.json"
+
+[scripts]
+test = "yarn test"
