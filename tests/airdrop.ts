@@ -132,11 +132,11 @@ function buildMerkleTree(
 // --------------------------------------------------------------------------
 // TESTS
 // --------------------------------------------------------------------------
-describe("airdrop0 (RNS claim tracking)", () => {
+describe("MerkleDrop RNS (RNS claim tracking)", () => {
   // Anchor glue: provider & program handles.
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
-  const program     = anchor.workspace.Airdrop0;       // <- idl namespace
+  const program     = anchor.workspace.MerkledropRns;       // <- idl namespace
   const connection  = provider.connection;
 
   // Runtime bookkeeping
