@@ -1,4 +1,4 @@
-# 🌀 Arthimium Lab: RNS-Optimized Solana Airdrop Contract
+# 🌀 Arthimium Lab: RNS-Optimized Solana Airdrop Contract - VERIFIED Solana Program ✅
 
 ## Overview
 
@@ -30,11 +30,6 @@ This contract ships with a comprehensive 10/10 passing Anchor test suite, checki
 See /tests/airdrop.ts for details.
 
 ---
-- **Transparency Note:**  
-This contract was deployed before Solana “Verified Build” was part of our workflow.  
-While the Explorer does not show the “Verified Build” badge, **all source code, test coverage, and deploy scripts are fully public and open source**—see this repo for full transparency.
-
----
 ## ⚠️ IMPORTANT:
 This repository uses a dummy declare_id!.
 Replace with your actual deployed program ID after deployment, or your contract will not work!
@@ -44,8 +39,7 @@ Never deploy using someone else’s ID, or you’ll lose control.
 ## 🏆 Solana Airdrop Distribution Cost Comparison
 
 | Method                            | 100k Recipients         | 1M Recipients          | Pros                                      | Cons                                                      |
-|-----------------------------------|-------------------------|------------------------|-------------------------------------------|-----------------------------------------------------------|
-| **Direct Send from Wallet**       | ~1,500 SOL              | ~15,000 SOL            | Simple, no contract                       | 💸 Most expensive, no on-chain proof, risk of bots, slow  |
+|-----------------------------------|-------------------------|------------------------|-------------------------------------------|-----------------------------------------------------------|  
 | **Classic Bitmap/Merkle Contract**| ~6 SOL (rent + deploy)  | ~42 SOL (rent + deploy)| On-chain claim, cheaper than direct       | High rent, slow for huge drops, bitmap bloat              |
 | **RNS-Optimized (THIS PROGRAM)**  | ~1.71 SOL (rent+deploy) | ~1.72 SOL (rent+deploy)| 🏆 Ultra-low cost, scalable, trustless    | None—best practice for big airdrops                       |
 
@@ -55,10 +49,8 @@ Direct Send assumes 0.015 SOL/recipient; Classic contract bitmap is 12,500 bytes
 
 ## 💸 Why Does This Matter?
 
-- **Direct Send**: Even at 0.015 SOL per transfer, airdropping to 100,000 addresses costs ~1,500 SOL (~$200k+ at current prices); 1 million costs ~15,000 SOL!
 - **Classic On-Chain Bitmap/Merkle**: Over 4 SOL rent for 100k users (and 10x that for 1 million); state grows huge, slow and costly.
-- **RNS-Optimized (this)**: 100k–1M users with only ~0.01–0.02 SOL in rent; program deployment fee (~1.7–2 SOL) is *fixed*, not user-count dependent.  
-  **Save over 99.8% vs. direct send and ~70% vs. old contracts!**
+- **RNS-Optimized (this)**: 100k–1M users with only ~0.01–0.02 SOL in rent; program deployment fee (~1.5– 1.7 SOL) is *fixed*, not user-count dependent.  
 - **Fully on-chain, auditable, and immutable:** No admin keys after launch, no “rug risk,” no pausing, and all proofs are public.
 
 ---
@@ -111,7 +103,7 @@ Direct Send assumes 0.015 SOL/recipient; Classic contract bitmap is 12,500 bytes
 ## 📝 Real Mainnet Example
 
 - **Program deployed for DUMBHEAD (DBH) at:**  
-  [`4KDWmJHSTRK7bhxJMwCBUUeBvX7pgrNuhYYiCMxRVY9V`](https://explorer.solana.com/address/4KDWmJHSTRK7bhxJMwCBUUeBvX7pgrNuhYYiCMxRVY9V?cluster=mainnet-beta)
+  [`FuE9G24fmey6LT21ra4kxGJ7QYnzaeVV7MnSXPrrVGg4`](https://solscan.io/account/FuE9G24fmey6LT21ra4kxGJ7QYnzaeVV7MnSXPrrVGg4)
 - **Proof links and step-by-step transparency** at: [dumbhead.lol](https://dumbhead.lol)
 
 ---
