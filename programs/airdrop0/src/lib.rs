@@ -45,7 +45,28 @@
 use anchor_lang::prelude::*;
 use anchor_spl::token::{self, Token, TokenAccount, Mint, TransferChecked};
 
-declare_id!("4KDWmJHSTRK7bhxJMwCBUUeBvX7pgrNuhYYiCMxRVY9V");
+// Conditional compilation for security.txt
+#[cfg(not(feature = "no-entrypoint"))]          
+use solana_security_txt::security_txt;
+declare_id!("FuE9G24fmey6LT21ra4kxGJ7QYnzaeVV7MnSXPrrVGg4");
+
+/*───────────────────────  security.txt  ───────────────────────*/
+#[cfg(not(feature = "no-entrypoint"))]
+security_txt! {
+    /* === required === */
+    name:                "Arthimium RNS Merkle-Airdrop",
+    project_url:         "https://arthimium.com",
+    contacts:            "email:info@arthimium.com,twitter:@arthimium,link:https://arthimium.com/contact",
+    policy:              "https://github.com/Takashi-Doyle/merkledrop-rns-contract/blob/main/SECURITY.md",
+
+    /* === Optional === */
+    preferred_languages: "en",
+    source_code:         "https://github.com/Takashi-Doyle/merkledrop-rns-contract",
+    source_release: "",
+    encryption: ""
+
+}
+/*───────────────────────────────────────────────────────────────*/
 
 // Configuration
 const MAX_CLAIMS: usize = 1_000_000;
@@ -53,7 +74,7 @@ const MODULI: [usize; 3] = [971, 311, 601]; // Coprime moduli
 const STATE_SPACE: usize = 8 + 32 + 32 + 8 + 8 + 1 + 32 + 8 + 122 + 39 + 76;
 
 #[program]
-pub mod airdrop0 {
+pub mod merkledrop_rns {
     use super::*;
 
     pub fn initialize(
