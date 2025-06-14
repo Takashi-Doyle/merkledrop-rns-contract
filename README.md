@@ -43,7 +43,7 @@ Never deploy using someone else’s ID, or you’ll lose control.
 | **Classic Bitmap/Merkle Contract**| ~6 SOL (rent + deploy)  | ~42 SOL (rent + deploy)| On-chain claim, cheaper than direct       | High rent, slow for huge drops, bitmap bloat              |
 | **RNS-Optimized (THIS PROGRAM)**  | ~1.71 SOL (rent+deploy) | ~1.72 SOL (rent+deploy)| 🏆 Ultra-low cost, scalable, trustless    | None—best practice for big airdrops                       |
 
-Direct Send assumes 0.015 SOL/recipient; Classic contract bitmap is 12,500 bytes per 100k users; RNS contract is <237 bytes for 1M users.
+Classic contract bitmap is 12,500 bytes per 100k users; RNS contract is <237 bytes for 1M users.
 
 ---
 
