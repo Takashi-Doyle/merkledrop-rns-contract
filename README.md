@@ -6,7 +6,8 @@ This is the **ultra-light, open-source, and math-nerd-approved** airdrop program
 **Built for mass airdrops on Solana, with the lowest possible on-chain footprint and cost.**
 
 ---
-
+[![Contributing](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+---
 ## 💎 Features
 
 - **Merkle-based Airdrop Core:**  
